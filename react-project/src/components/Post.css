@@ -1,0 +1,31 @@
+.post{
+  color:white;
+ background-color: burlywood;
+ border-radius: 10px;
+ padding:10px 10px;
+ margin-top: 20px;
+}
+.author{
+  font-size: medium;
+  color:peru;
+  
+ text-transform: uppercase;
+}
+
+.body{
+  white-space: pre-wrap;
+  font-style: italic;
+  font-size: larger;
+}
+
+.posts{
+  list-style: none;
+  max-width: 50rem;
+  margin:1rem auto;
+  padding:1rem 0;
+  display:grid;
+  gap:1rem;
+  grid-template-columns: repeat(3,30%);
+  justify-content: center;
+}
+
