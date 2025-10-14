@@ -5,9 +5,9 @@ import Modal from "./Modal";
 import './Post.css';
 
 
-export default function PostsList()
+export default function PostsList({isPosting,onStopPosting})
 {
-   const [isModalVisible,setIsModalVisible]=useState(true);
+
    const [enteredBody,setEnteredBody]=useState(''); //return an array
    const [enteredAuthor,setEnteredAuthor]=useState('');
  
@@ -23,15 +23,12 @@ export default function PostsList()
     setEnteredAuthor(event.target.value);
   }
 
-  function hideModalHandler()
-  {
-    setIsModalVisible(false);
-  } 
+ 
 
   return (
     <>
 
-    {isModalVisible && (<Modal onClose={hideModalHandler}>
+    {isPosting && (<Modal onClose={onStopPosting}>
     <NewPost onBodyChange={changeBodyListener} onAuthorChange={AuthorChangeHandler}/>
     </Modal>) }
     
