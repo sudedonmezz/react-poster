@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./NewPost.css";
+import "../components/NewPost.css";
+import Modal from "../components/Modal";
 
 
 
@@ -34,6 +35,8 @@ const postData={
 
   return (
 
+    <Modal>
+
 
     <form className="form" onSubmit={submitHandler}>
        <p>
@@ -53,6 +56,8 @@ const postData={
    
      
     </form>
+
+    </Modal>
 
 
   );
