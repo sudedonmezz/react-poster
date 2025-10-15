@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../components/NewPost.css";
 import Modal from "../components/Modal";
 
@@ -50,7 +51,7 @@ const postData={
       </p>
 
       <p className="actions">
-        <button type="button" onClick={props.onCancel}>Cancel</button>
+        <Link className="cancelButton" type="button" to="/">Cancel</Link>
         <button type="submit">Submit</button>
       </p>
    

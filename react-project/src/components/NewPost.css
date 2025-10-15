@@ -11,6 +11,7 @@
   margin-bottom: 0.05rem;
   color: #a46a32;
   font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .form input,
@@ -24,6 +25,8 @@
   background-color: peru;
   color: white;
   font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
   
 }
 
@@ -33,7 +36,7 @@
   gap: 0.5rem;
 }
 
-.actions button {
+.actions button, .cancelButton {
   cursor: pointer;
   font: inherit;
   padding: 0.5rem 1.5rem;
@@ -43,8 +46,18 @@
   color: white;
 }
 
+.cancelButton {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.cancelButton:hover {
+  background-color: peru;
+  text-decoration: none;
+}
 .actions button:hover {
-  background-color: #a46a32;
+  background-color: transparent
+
 }
 
 .actions button[type='button'] {

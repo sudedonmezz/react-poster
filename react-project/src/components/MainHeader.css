@@ -15,6 +15,7 @@
   gap: 1.5rem;
   align-items: center;
   color: peru;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .button {
@@ -29,6 +30,8 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: bold;
+  text-decoration: none;
+ font-family: 'Courier New', Courier, monospace;
 }
 
 .button:hover {
